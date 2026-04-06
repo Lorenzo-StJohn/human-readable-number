@@ -1,135 +1,136 @@
 module.exports = function toReadable(number) {
-if (number === 0) return 'zero';
+  let currentNumber = number;
+if (currentNumber === 0) return 'zero';
     let result = '';
-    if (number >= 900) {
+    if (currentNumber >= 900) {
         result += 'nine hundred';
-        number -= 900;
+        currentNumber -= 900;
     }
-    if (number >= 800) {
+    if (currentNumber >= 800) {
         result += 'eight hundred';
-        number -= 800;
+        currentNumber -= 800;
     }
-    if (number >= 700) {
+    if (currentNumber >= 700) {
         result += 'seven hundred';
-        number -= 700;
+        currentNumber -= 700;
     }
-    if (number >= 600) {
+    if (currentNumber >= 600) {
         result += 'six hundred';
-        number -= 600;
+        currentNumber -= 600;
     }
-    if (number >= 500) {
+    if (currentNumber >= 500) {
         result += 'five hundred';
-        number -= 500;
+        currentNumber -= 500;
     }
-    if (number >= 400) {
+    if (currentNumber >= 400) {
         result += 'four hundred';
-        number -= 400;
+        currentNumber -= 400;
     }
-    if (number >= 300) {
+    if (currentNumber >= 300) {
         result += 'three hundred';
-        number -= 300;
+        currentNumber -= 300;
     }
-    if (number >= 200) {
+    if (currentNumber >= 200) {
         result += 'two hundred';
-        number -= 200;
+        currentNumber -= 200;
     }
-    if (number >= 100) {
+    if (currentNumber >= 100) {
         result += 'one hundred';
-        number -= 100;
+        currentNumber -= 100;
     }
-    if (number >= 20) {
+    if (currentNumber >= 20) {
         if (result.length > 0) result += ' ';
     }
-    if (number >= 90) {
+    if (currentNumber >= 90) {
         result += 'ninety';
-        number -= 90;
+        currentNumber -= 90;
     }
-    if (number >= 80) {
+    if (currentNumber >= 80) {
         result += 'eighty';
-        number -= 80;
+        currentNumber -= 80;
     }
-    if (number >= 70) {
+    if (currentNumber >= 70) {
         result += 'seventy';
-        number -= 70;
+        currentNumber -= 70;
     }
-    if (number >= 60) {
+    if (currentNumber >= 60) {
         result += 'sixty';
-        number -= 60;
+        currentNumber -= 60;
     }
-    if (number >= 50) {
+    if (currentNumber >= 50) {
         result += 'fifty';
-        number -= 50;
+        currentNumber -= 50;
     }
-    if (number >= 40) {
+    if (currentNumber >= 40) {
         result += 'forty';
-        number -= 40;
+        currentNumber -= 40;
     }
-    if (number >= 30) {
+    if (currentNumber >= 30) {
         result += 'thirty';
-        number -= 30;
+        currentNumber -= 30;
     }
-    if (number >= 20) {
+    if (currentNumber >= 20) {
         result += 'twenty';
-        number -= 20;
+        currentNumber -= 20;
     }
-    if (number > 0) {
+    if (currentNumber > 0) {
         if (result.length > 0) result += ' ';
     }
-    if (number === 19) {
+    if (currentNumber === 19) {
         result += 'nineteen';
     }
-    if (number === 18) {
+    if (currentNumber === 18) {
         result += 'eighteen';
     }
-    if (number === 17) {
+    if (currentNumber === 17) {
         result += 'seventeen';
     }
-    if (number === 16) {
+    if (currentNumber === 16) {
         result += 'sixteen';
     }
-    if (number === 15) {
+    if (currentNumber === 15) {
         result += 'fifteen';
     }
-    if (number === 14) {
+    if (currentNumber === 14) {
         result += 'fourteen';
     }
-    if (number === 13) {
+    if (currentNumber === 13) {
         result += 'thirteen';
     }
-    if (number === 12) {
+    if (currentNumber === 12) {
         result += 'twelve';
     }
-    if (number === 11) {
+    if (currentNumber === 11) {
         result += 'eleven';
     }
-    if (number === 10) {
+    if (currentNumber === 10) {
         result += 'ten';
     }
-    if (number === 9) {
+    if (currentNumber === 9) {
         result += 'nine';
     }
-    if (number === 8) {
+    if (currentNumber === 8) {
         result += 'eight';
     }
-    if (number === 7) {
+    if (currentNumber === 7) {
         result += 'seven';
     }
-    if (number === 6) {
+    if (currentNumber === 6) {
         result += 'six';
     }
-    if (number === 5) {
+    if (currentNumber === 5) {
         result += 'five';
     }
-    if (number === 4) {
+    if (currentNumber === 4) {
         result += 'four';
     }
-    if (number === 3) {
+    if (currentNumber === 3) {
         result += 'three';
     }
-    if (number === 2) {
+    if (currentNumber === 2) {
         result += 'two';
     }
-    if (number === 1) {
+    if (currentNumber === 1) {
         result += 'one';
     }
     return result;
